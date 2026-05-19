@@ -19,5 +19,5 @@ COPY . .
 # Port expose karo
 EXPOSE 1000
 
-# Server start karo
+# Server start karo, npm run dev (local development), node index.js (production)
 CMD ["node", "index.js"]

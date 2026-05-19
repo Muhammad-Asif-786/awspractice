@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                git branch: 'main', url: 'https://github.com/Muhammad-Asif-786/cicd-pipeline-using-jenkins-github-webhook-ubuntu-aws-EC2-Docker.git'
+                git branch: 'main', url: 'https://github.com/Muhammad-Asif-786/awspractice.git'
             }
         }
         stage('Build Docker Image') {
@@ -33,14 +33,14 @@ pipeline {
                 docker run -d -p ${PORT}:${PORT} \
                 --name ${CONTAINER_NAME} ${IMAGE_NAME}
                 """
-            }
+            }`
         }
         stage('Send Email Notification') {
             steps {
                 emailext (
-                    subject: "Nestjs App Deployed Successful on EC2.!",
-                    body: """Your nestjs app deployed!
-                    http://13.48.42.35:${PORT}/                 
+                    subject: "Mern App Deployed Successful on EC2.!",
+                    body: """Your mern app deployed!
+                    http://51.20.191.176:${PORT}/                 
                     """,
                     to: "${EMAIL}"
                 )
