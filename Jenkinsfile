@@ -33,7 +33,7 @@ pipeline {
                 docker run -d -p ${PORT}:${PORT} \
                 --name ${CONTAINER_NAME} ${IMAGE_NAME}
                 """
-            }`
+            }
         }
         stage('Send Email Notification') {
             steps {

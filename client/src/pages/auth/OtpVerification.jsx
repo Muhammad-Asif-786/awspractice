@@ -83,7 +83,7 @@ export default function OtpVerification() {
           Verify OTP
         </h5>
         <p className="text-center text-gray-500 text-sm mb-6">
-          Enter the 6-digit OTP sent to your email
+          Enter the 6-digit OTP sent to your email.
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-4">
