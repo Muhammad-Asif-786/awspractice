@@ -1,0 +1,60 @@
+# ========================
+# Dependencies
+# ========================
+node_modules/
+
+# ========================
+# Environment Variables
+# ========================
+.env
+.env.*
+!.env.example
+
+# ========================
+# Logs
+# ========================
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ========================
+# Build Output
+# ========================
+dist/
+build/
+
+# ========================
+# SSL / Keys / Certificates
+# ========================
+*.pem
+*.key
+*.crt
+*.p12
+
+# ========================
+# Uploads (local storage)
+# ========================
+uploads/
+
+# ========================
+# Test Coverage
+# ========================
+coverage/
+
+# ========================
+# OS Files
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# Editor / IDE
+# ========================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
