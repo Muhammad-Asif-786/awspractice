@@ -111,7 +111,7 @@ export default function Login() {
 
         {/* EMAIL */}
         <div className="mt-4">
-          <label className="block text-gray-700 mb-1">Email:
+          <label className="block text-gray-700 mb-1">Email Address:
             
           </label>
           <input
