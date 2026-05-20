@@ -142,7 +142,7 @@ export default function Login() {
                   onClick={() => setShowPassword(!showPassword)}
                   className=" flex items-center gap-2 px-3 cursor-pointer"
                 >
-                   <span>🔒</span>
+                   {/* <span>🔒</span> */}
                   {showPassword ? <FaRegEye /> : <FaRegEyeSlash />}
                 </div>
               </div>

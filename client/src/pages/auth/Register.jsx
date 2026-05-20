@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Axios from "../../utils/Axios.js";
 import SummaryApi from "../../apies/SummaryApi.js";
 import toast from "react-hot-toast";
@@ -140,7 +140,7 @@ export default function Register() {
               onClick={() => setShowPassword(prev => !prev)}
               className="flex items-center gap-2 cursor-pointer px-1"
               >
-                <span>🔒</span>
+                {/* <span>🔒</span> */}
               {showPassword ? <FaRegEye /> : <FaRegEyeSlash />}
             </div>
             </div>
@@ -163,7 +163,7 @@ export default function Register() {
               onClick={() => setconfirmPassword(prev => !prev)}
               className="flex items-center gap-2  cursor-pointer px-1"
               >
-                <span>🔒</span>
+                {/* <span>🔒</span> */}
               {confirmPassword ? <FaRegEye /> : <FaRegEyeSlash />}
             </div>
             </div>
