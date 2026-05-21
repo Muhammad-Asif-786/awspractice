@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import toast from "react-hot-toast";
 import { useLocation, useNavigate } from "react-router-dom";
 import AxiosToastError from "../../utils/AxiosToastError.js";
@@ -106,7 +106,7 @@ export default function OtpVerification() {
             type="submit"
             className="w-full mt-4 bg-green-600 hover:bg-green-700 text-white font-bold py-2 rounded-lg transition"
           >
-            Verify OTP
+            Verify OTP.
           </button>
         </form>
 
